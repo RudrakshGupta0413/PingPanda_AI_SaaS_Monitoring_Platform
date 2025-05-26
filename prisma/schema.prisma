@@ -28,7 +28,7 @@ model User {
   updatedAt  DateTime @updatedAt
 
   EventCategories EventCategory[]
-  Event           Event[]
+  events          Event[]
   Quota           Quota[]
 
   @@index([email, apiKey])
@@ -43,7 +43,7 @@ model EventCategory {
   user      User     @relation(fields: [userId], references: [id])
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  Event     Event[]
+  events     Event[]
 
   @@unique([name, userId])
 }
