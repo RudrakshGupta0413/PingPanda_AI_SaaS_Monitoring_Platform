@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useMutation, useQueryClient } from "@tanstack/react-query"
-import { client } from "../lib/client"
+import { client } from "../../lib/client"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { CreateEventCategoryModal } from "@/components/create-event-category-modal"

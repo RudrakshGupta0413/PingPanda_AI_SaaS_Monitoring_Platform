@@ -1,5 +1,5 @@
-import { DiscordClient } from "@/app/lib/discord-client"
-import { CATEGORY_NAME_VALIDATOR } from "@/app/lib/validators/category-validator"
+import { DiscordClient } from "@/lib/discord-client"
+import { CATEGORY_NAME_VALIDATOR } from "@/lib/validators/category-validator"
 import { FREE_QUOTA, PRO_QUOTA } from "@/config"
 import { db } from "@/db"
 import { timeStamp } from "console"
