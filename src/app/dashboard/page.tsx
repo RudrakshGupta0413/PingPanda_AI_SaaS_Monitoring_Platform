@@ -29,7 +29,7 @@ const Page = async ({ searchParams }: PageProps) => {
   })
 
   if (!user) {
-    redirect("/sign-in")
+    return redirect("/welcome")
   }
 
   const intent = searchParams.intent
